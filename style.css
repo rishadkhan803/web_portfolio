@@ -1,0 +1,107 @@
+/* Variables */
+:root {
+  --color-primary: #ff6949;
+  --color-secondary: #fd9c77;
+  --text-primary: #ffba26;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+::selection {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+/* Utilities */
+.container {
+  max-width: 87%;
+  margin: auto;
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.l-heading {
+  font-size: 5.6rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.s-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background: linear-gradient(
+    45deg,
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+}
+
+/* Style */
+#top {
+  background: url("img/top-banner.png") no-repeat;
+}
+
+#top .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#top .right-info {
+  width: 50%;
+}
+
+#top .right-info img {
+  width: 100%;
+}
+
+#top .left-info {
+  width: 56%;
+}
+
+#top .left-info .l-heading {
+  margin-top: 3.4rem;
+}
+
+#top .left-info .s-heading {
+  margin-top: 2.4rem;
+}
+
+#top .left-info .text {
+  margin: 1.4rem 0 1.2rem 0;
+  padding-right: 8rem;
+}
